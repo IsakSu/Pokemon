@@ -29,13 +29,11 @@ def search_pokemon(pokemon_list):
     if found_pokemon == "":
         print("We could not find your pokemon!")
     else:
-        print("Vi hittade din pokemon: \n" + found_pokemon)
+        print("Vi hittade din pokemon: \n" + str(found_pokemon))
 
 def main():
     pokemon_list = read_file()
-
-    create_object("1111", "boll", "Water", "Flying", "600", "200", "100", "100", "100", "100", "100", "10", "True")
-
     search_pokemon(pokemon_list)
+    create_object("1111", "boll", "Water", "Flying", "600", "200", "100", "100", "100", "100", "100", "10", "True")
 
 main()
